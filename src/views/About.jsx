@@ -49,7 +49,7 @@ const About = () => {
                     : "mt-4 text-xl text-justify text-white"
                 }
               >
-                <p className="mb-4">I’m a Data Engineer, a storyteller of data. I love the thrill of diving into complex challenges and crafting elegant, efficient solutions. It's like solving puzzles, but with real-world implications.</p>
+                <p className="mb-4">A Data Engineer with a passion for storytelling. I love diving into complex challenges and finding elegant, efficient solutions.</p>
                 <p className="mb-4">Currently pursuing a Master’s in Data Engineering from the University of Wisconsin-Madison, I’ve had the opportunity to work on a range of projects that include data analysis, visualization, machine learning, IoT, and Android app development.</p>
                 <p>When I'm not deep in data, you might find me cycling through scenic trails, hiking new paths, or catching up on the latest TV shows and movies. I also have a hobby of pretending to be a high-end photographer, capturing the beauty of sunsets and striking skies with my phone. Whether it's solving complex problems or enjoying some downtime, I’m always up for a new adventure.</p>
               </div>
