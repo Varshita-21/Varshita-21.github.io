@@ -36,7 +36,7 @@ const Home = () => {
     {
       id: 2,
       date: 'Sep 2022 - Aug 2023',
-      title: 'Data Engineer',
+      title: 'Software Engineer',
       subtitle: 'Providence Global Center, India',
       description: [
         'Designed and implemented scalable data pipelines on Azure for the Trusana mental wellness platform, optimizing data processing with Azure Data Factory and SQL. Developed interactive Power BI dashboards and integrated machine learning algorithms to enhance data insights and visualizations.'

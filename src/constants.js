@@ -5,6 +5,7 @@ export const techStack = [
   { name: "Java", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", type: "language" },
   { name: "MatLab", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg", type: "language" },
   { name: "Python", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", type: "language" },
+  { name: "Julia", link: "/Users/Patron/Desktop/portfolio-f/src/assets/icons/Julia_(programming_language)-Logo.wine.svg", type: "language" },
 
   // Databases
   { name: "Gremlin", link: "https://img.icons8.com/?size=100&id=33088&format=png&color=000000", type: "database" },
@@ -51,32 +52,38 @@ export const contactLinks = [
   },
   {
     name: 'Medium',
-    url: 'https://img.icons8.com/ios/40/fd9f5b/medium-logo.png', // Added the Medium icon URL
+    url: 'https://img.icons8.com/ios/40/fd9f5b/medium-logo.png', 
     link: 'https://medium.com/@varshitha.rodda9'
   },
+  // {
+  //   name: 'Instagram',
+  //   url: 'https://img.icons8.com/doodle/40/000000/instagram-new--v2.png',
+  //   link: 'https://www.instagram.com/v._.rshita/'
+  // },
   {
-    name: 'Instagram',
-    url: 'https://img.icons8.com/doodle/40/000000/instagram-new--v2.png',
-    link: 'https://www.instagram.com/v._.rshita/'
+    name: 'VSCO',
+    url: 'https://img.icons8.com/?size=40&id=GFS9wU13hXrJ&format=png&color=000000',
+    link: 'https://vsco.co/veeeeee21/gallery'
   }
 ];
 
 
 
-export const serviceData = [
-  {
-    name: 'Data Engineering',
-    desc: "I specialize in designing and implementing robust data pipelines, transforming raw data into actionable insights. Leveraging tools such as Apache Spark, PySpark, and SQL, I ensure efficient ETL processes. I also build scalable architectures on cloud platforms like Azure, ensuring seamless integration of data sources for machine learning and analytics applications.",
-    img: "https://img.icons8.com/clouds/100/database.png"
-  },
-  {
-    name: 'BI Solutions & Data Analytics',
-    desc: "I turn complex data into visually appealing and insightful business reports using tools like Power BI and Tableau. By building comprehensive ETL pipelines and creating detailed dashboards, I help organizations track and analyze key performance indicators (KPIs), driving data-driven decision-making across all levels of the business.",
-    img: "https://img.icons8.com/external-becris-lineal-color-becris/100/external-analyst-business-analysis-becris-lineal-color-becris.png"
-  },
-  {
-    name: 'Artificial Intelligence',
-    desc: "I build advanced machine learning models and specialize in working with large language models (LLMs). I leverage Retrieval-Augmented Generation (RAG) to enhance LLM performance and provide more accurate, context-aware outputs. My focus is on developing innovative AI solutions that are scalable and tailored to solve complex challenges across various domains.",
-    img: "https://img.icons8.com/cotton/100/artificial-intelligence.png"
-  },
-];
+  export const serviceData = [
+    {
+      name: 'Data Engineering & Analytics',
+      desc: "I specialize in designing scalable data pipelines using Apache Spark, PySpark, and SQL, and build seamless ETL processes on cloud platforms like Azure. I also leverage BI tools like Power BI and Tableau to turn raw data into actionable insights, enabling data-driven decision-making through interactive dashboards and detailed reports.",
+      img: "https://img.icons8.com/clouds/110/database.png"
+    },
+    {
+      name: 'AI & ML',
+      desc: "I focus on building advanced AI solutions using machine learning models and large language models (LLMs). Leveraging techniques like Retrieval-Augmented Generation (RAG), I develop context-aware AI systems for complex challenges across domains. My AI work integrates with scalable cloud architectures for cutting-edge performance.",
+      img: "https://img.icons8.com/cotton/100/artificial-intelligence.png"
+    },
+    {
+      name: 'Software Development',
+      desc: "I have experience working in backend development and systems design using C++, C# and NoSQL databases. My work focuses on building scalable and reliable software solutions, applying modern engineering practices to ensure systems are optimized for performance and robustness.",
+      img: "https://img.icons8.com/?size=100&id=13662&format=png&color=000000"
+    },
+  ];
+  

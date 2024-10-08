@@ -105,7 +105,6 @@ code {
   z-index: 0; /* Set z-index to be behind the content */
 }
 
-/* Optional: Adjust line color for specific item types */
 .vertical-timeline-element[data-type='work']::before {
   background: #00bfff; /* Work line color */
 }

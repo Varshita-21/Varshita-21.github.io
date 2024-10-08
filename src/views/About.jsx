@@ -10,14 +10,14 @@ const About = () => {
   const darkMode = theme.state.darkMode;
 
   const legend = {
-    language: { color: "bg-blue-200", label: "Programming Languages", icon: <FaCode /> },
-    database: { color: "bg-green-200", label: "Databases", icon: <FaDatabase /> },
-    framework: { color: "bg-purple-200", label: "Frameworks", icon: <FaPuzzlePiece /> },
-    tool: { color: "bg-yellow-200", label: "Tools", icon: <FaTools /> },
-    cloud: { color: "bg-pink-200", label: "Cloud Platforms", icon: <FaCloud /> },
-    library: { color: "bg-teal-200", label: "Libraries", icon: <FaCubes /> },
-    visualization: { color: "bg-orange-200", label: "Visualization", icon: <FaChartBar /> },
+    language: { color: "bg-blue-100", label: "Programming Languages", icon: <FaCode /> },
+    database: { color: "bg-green-100", label: "Databases", icon: <FaDatabase /> },
+    tool_or_framework: { color: "bg-yellow-100", label: "Tools & Frameworks", icon: <FaTools /> },
+    cloud: { color: "bg-pink-100", label: "Cloud Platforms", icon: <FaCloud /> },
+    library: { color: "bg-teal-100", label: "Libraries", icon: <FaCubes /> },
+    visualization: { color: "bg-orange-100", label: "Visualization Tools", icon: <FaChartBar /> },
   };
+  
   
   const getTypeClass = (type) => {
     return legend[type]?.color || "bg-gray-200";
