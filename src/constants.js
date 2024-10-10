@@ -63,7 +63,7 @@ export const contactLinks = [
   {
     name: 'VSCO',
     url: 'https://img.icons8.com/?size=40&id=GFS9wU13hXrJ&format=png&color=000000',
-    link: 'https://vsco.co/veeeeee21/gallery'
+    link: 'https://vsco.co/varshita21/gallery'
   }
 ];
 

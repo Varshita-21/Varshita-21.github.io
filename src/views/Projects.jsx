@@ -7,7 +7,7 @@ const Projects = () => {
       url: "",
       imgSrc: "https://img.icons8.com/?size=100&id=111610&format=png&color=000000", 
       title: "Autonomous Trucking with Remote Monitoring",
-      associatedWith: "Current Research",
+      associatedWith: "UW-Madison (Research)",
       skills: "IoT, Mobile Satellites, Network Coverage, Signal Processing, Reinforcement Learning, Python",
       description: [
         "<span class='highlight'>Problem Statement</span>: Ensuring reliable connectivity for autonomous trucks operating in remote and mountainous regions is challenging due to limited network infrastructure, which impacts real-time monitoring, communication, and operational efficiency.",
