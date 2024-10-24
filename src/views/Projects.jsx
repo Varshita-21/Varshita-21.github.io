@@ -41,6 +41,18 @@ const Projects = () => {
     },
     {
       url: "",
+      imgSrc: "https://img.icons8.com/?size=100&id=W9M6LCrTvolF&format=png&color=000000",
+      title: "Spotify ETL Pipeline",
+      associatedWith: "Personal Project",
+      skills: "Python, Airflow, PostgreSQL, Docker, APIs, Pandas",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: Manual data collection and processing from Spotify API resulted in inconsistent data updates, poor scalability, and lack of automated monitoring for music analytics.",
+        "<span class='highlight'>Approach</span>: Engineered an automated ETL pipeline using Apache Airflow DAGs for orchestration, implementing robust error handling and retry mechanisms. Developed custom data validation rules in Pandas for data quality assurance. Created containerized environment using Docker Compose for consistent deployment across environments.",
+        "<span class='highlight'>Impact</span>: Successfully processes 10,000+ records per run with 99.9% data accuracy. Reduced data processing time by 75% through optimized batch processing. Achieved zero-downtime deployments through containerization and automated monitoring alerts."
+      ]
+    },
+    {
+      url: "",
       imgSrc: "https://img.icons8.com/?size=100&id=45060&format=png&color=000000", 
       title: "Open-source AI Agent",
       associatedWith: "UW-Madison",
