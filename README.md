@@ -6,7 +6,9 @@ Welcome to my personal portfolio website! This project showcases my journey as a
 You can view the live version of my portfolio here: [varshita-21.github.io](https://varshita-21.github.io/)
 
 ## Built Using
-This portfolio was developed using the following technologies:
+This portfolio was built using the following technologies:
 
-- **React**: The website's core is built using React for a modern, component-based UI.
-- **GitHub Pages**: The site is hosted on GitHub Pages.
+- **React:** The core framework used to build the UI components and manage state.
+- **Tailwind CSS:** For styling the website with utility-first CSS classes and responsive design.
+- **GitHub Pages:** To deploy and host the website, making it accessible to the public.
+
