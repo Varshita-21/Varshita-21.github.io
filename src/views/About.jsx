@@ -2,12 +2,17 @@ import React, { useContext } from "react";
 import { techStack } from "../constants";
 import { ThemeContext } from "../themeProvider";
 import { motion } from "framer-motion";
-import { FaCode, FaDatabase, FaTools, FaCloud, FaPuzzlePiece, FaCubes, FaChartBar } from 'react-icons/fa';
-import varshitaImage from '../assets/varshita.jpg'; // Import the image
+import { FaCode, FaDatabase, FaTools, FaCloud, FaCubes, FaChartBar, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
+import varshitaImage from '../assets/varshita.jpg';
 
 const About = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+
+  const tags = [
+    { text: "New Grad (May'25)", icon: <FaGraduationCap className="mr-2" />, color: "bg-blue-500" },
+    { text: "Co-op (Spring'25)", icon: <FaCalendarAlt className="mr-2" />, color: "bg-purple-500" }
+  ];
 
   const legend = {
     language: { color: "bg-blue-100", label: "Programming Languages", icon: <FaCode /> },
@@ -17,101 +22,108 @@ const About = () => {
     library: { color: "bg-teal-100", label: "Libraries", icon: <FaCubes /> },
     visualization: { color: "bg-orange-100", label: "Visualization Tools", icon: <FaChartBar /> },
   };
-  
-  
-  const getTypeClass = (type) => {
-    return legend[type]?.color || "bg-gray-200";
-  };
+
+  const getTypeClass = (type) => legend[type]?.color || "bg-gray-200";
+
+  const textClass = darkMode ? "text-gray-500" : "text-white";
+  const headingClass = darkMode 
+    ? "text-5xl font-bold px-4 md:px-0 text-center" 
+    : "text-5xl font-bold px-4 md:px-0 text-center text-white";
 
   return (
     <div id="about" className={darkMode ? "bg-white" : "bg-gray-900"}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-12">
-        <h2
-          className={
-            darkMode
-              ? "text-5xl font-bold px-4 md:px-0 text-center"
-              : "text-5xl font-bold px-4 md:px-0 text-center text-white"
-          }
-        >
-          About Me
-        </h2>
-        <div className="flex flex-col md:flex-row items-start mt-12">
-          {/* Text Container */}
-          <div className="flex-1 md:w-2/3 md:mr-4">
-            <motion.div>
-              <h4 className="text-3xl font-semibold text-blue-500">
-                Bio
-              </h4>
-              <div
-                className={
-                  darkMode
-                    ? "mt-4 text-xl text-justify text-gray-500"
-                    : "mt-4 text-xl text-justify text-white"
-                }
-              >
-                <p className="mb-4">A Data Engineer with a passion for storytelling. I love diving into complex challenges and finding elegant, efficient solutions.</p>
-                <p className="mb-4">Currently pursuing a Master’s in Data Engineering from the University of Wisconsin-Madison, I’ve had the opportunity to work on a range of projects that include data analysis, visualization, machine learning, IoT, and Android app development.</p>
-                <p>When I'm not deep in data, you might find me cycling through scenic trails, hiking new paths, or catching up on the latest TV shows and movies. I also have a hobby of pretending to be a high-end photographer, capturing the beauty of sunsets and striking skies with my phone. Whether it's solving complex problems or enjoying some downtime, I’m always up for a new adventure.</p>
+        <h2 className={headingClass}>About Me</h2>
+        
+        <div className="flex flex-col md:flex-row items-start mt-8 gap-6">
+          {/* Bio Section */}
+          <div className="flex-1 md:w-2/3">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <h4 className="text-3xl font-semibold text-blue-500">Bio</h4>
+              <div className={`mt-4 text-xl text-justify ${textClass}`}>
+                <p className="mb-4">
+                  An Engineer with a passion for storytelling. I love diving into complex challenges and finding elegant, efficient solutions.
+                </p>
+                <p className="mb-4">
+                  Currently pursuing a Master's in Data Engineering from the University of Wisconsin-Madison, I've had the opportunity to work on a range of projects that include data analysis, visualization, machine learning, IoT, and Android app development.
+                </p>
+                <p className="mb-4">
+                  When I'm not deep in data, you might find me cycling through scenic trails, hiking new paths, or catching up on the latest TV shows and movies. I also have a hobby of pretending to be a high-end photographer, capturing the beauty of sunsets and striking skies with my phone. Whether it's solving complex problems or enjoying some downtime, I'm always up for a new adventure.
+                </p>
               </div>
             </motion.div>
           </div>
 
-          {/* Image Container */}
-          <div className="flex-1 md:w-1/3 flex justify-end mt-4 md:mt-0">
+          {/* Image Section */}
+          <motion.div 
+            className="md:flex-1 w-full md:w-1/3 flex justify-center md:justify-end"
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             <img
               src={varshitaImage}
               alt="Varshita"
-              className="w-80 h-auto rounded-lg shadow-lg"
+              className="w-64 md:w-80 h-auto rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
             />
-          </div>
+          </motion.div>
         </div>
-        <motion.div>
+
+        {/* Technologies Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
           <h4 className="mt-12 text-3xl font-semibold text-blue-500">
             Technologies and Tools
           </h4>
-          <p
-            className={
-              darkMode
-                ? "mt-4 text-xl text-justify text-gray-500"
-                : "mt-4 text-xl text-justify text-white"
-            }
-          >
-          </p>
-        </motion.div>
-        <div className="mt-8">
-          <div className="flex flex-wrap mt-2">
-            {Object.keys(legend).map((key) => (
-              <div key={key} className="flex items-center mr-4 mb-2">
-                <span className={`w-4 h-4 inline-block ${legend[key].color} mr-2 rounded-full`}></span>
-                <span className="mr-2">{legend[key].icon}</span>
-                <span className={darkMode ? "text-gray-500" : "text-white"}>{legend[key].label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
 
-        <motion.div className="flex flex-wrap mt-8 justify-between">
-          {techStack.map((el, index) => (
-            <motion.div
-              key={index}
-              initial="hidden"
-              whileInView="visible"
-              variants={{
-                visible: {
-                  y: 0,
-                  opacity: 1,
-                  transition: {
-                    type: "spring",
-                  },
-                },
-                hidden: { opacity: 1, y: 80 },
-              }}
-              className={`py-2 px-4 ${getTypeClass(el.type)} md:m-4 mx-2 mt-6 rounded-lg flex items-center hover:scale-125 cursor-pointer md:w-48 w-40 shadow-lg`}
-            >
-              <img alt="" src={el.link} className="w-12" />
-              <h4 className="text-md ml-4">{el.name}</h4>
-            </motion.div>
-          ))}
+          {/* Legend */}
+          <div className="mt-8">
+            <div className="flex flex-wrap gap-4">
+              {Object.entries(legend).map(([key, { color, label, icon }]) => (
+                <motion.div
+                  key={key}
+                  className="flex items-center bg-opacity-20 rounded-lg px-3 py-2 shadow-sm"
+                  whileHover={{ scale: 1.05 }}
+                >
+                  <span className={`w-3 h-3 ${color} rounded-full mr-2`}></span>
+                  <span className="mr-2 text-blue-500">{icon}</span>
+                  <span className={textClass}>{label}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+
+          {/* Tech Stack Grid */}
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-8"
+            initial="hidden"
+            animate="visible"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } }
+            }}
+          >
+            {techStack.map((tech, index) => (
+              <motion.div
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 100 } }
+                }}
+                whileHover={{ scale: 1.05 }}
+                className={`${getTypeClass(tech.type)} p-4 rounded-lg flex items-center shadow-md hover:shadow-lg transition-all duration-300`}
+              >
+                <img alt={tech.name} src={tech.link} className="w-12 h-12 object-contain" />
+                <h4 className="text-md ml-4 font-medium">{tech.name}</h4>
+              </motion.div>
+            ))}
+          </motion.div>
         </motion.div>
       </div>
     </div>

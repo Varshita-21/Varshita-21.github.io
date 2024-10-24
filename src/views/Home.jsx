@@ -5,6 +5,8 @@ import { ThemeContext } from "../themeProvider";
 import cloud from "../assets/cloudBg.png";
 import cloudDark from "../assets/cloudDark.png";
 import { motion } from "framer-motion"; // Import motion from framer-motion
+import { FaCode, FaDatabase, FaTools, FaCloud, FaCubes, FaChartBar, FaBriefcase, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
+
 
 const Home = () => {
   const theme = useContext(ThemeContext);
@@ -12,7 +14,15 @@ const Home = () => {
 
   // Replace this URL with the actual iCloud share link of your resume
   const resumeUrl =
-    "https://drive.google.com/file/d/1Rh67Yh7P5UpVkLSbg77LMye44R2r0M-q/view?usp=drive_link";
+    "https://drive.google.com/file/d/1hp7N7KiVwzWf3YlKb6OmzdN3t9ahP77i/view?usp=sharing";
+
+  // Sample tags for Status Tags feature
+  const tags = [
+    { text: "Open to Work", icon: <FaBriefcase className="mr-2" />, color: "bg-green-300" },
+    { text: "New Grad (May'25)", icon: <FaGraduationCap className="mr-2" />, color: "bg-blue-300" },
+    { text: "Co-op (Spring'25)", icon: <FaCalendarAlt className="mr-2" />, color: "bg-purple-300" }
+  ];
+  
 
   return (
     <>
@@ -40,6 +50,8 @@ const Home = () => {
               <Typical
                 steps={[
                   "A Data Engineer",
+                  1000,
+                  "A Software Engineer",
                   1000,
                   "A Data Analyst",
                   1000,
@@ -92,7 +104,24 @@ const Home = () => {
             </a>
           </div>
 
+          {/* Status Tags */}
+          <div className="flex flex-wrap gap-3 mt-10">
+            {tags.map((tag, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: index * 0.1 }}
+                className={`${tag.color} text-white px-4 py-2 rounded-full flex items-center shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer`}
+              >
+                {tag.icon}
+                <span className="font-semibold ml-2">{tag.text}</span>
+              </motion.div>
+            ))}
+          </div>
+
         </main>
+        
       </div>
     </>
   );

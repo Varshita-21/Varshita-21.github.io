@@ -17,7 +17,7 @@ const Home = () => {
     {
       id: 0,
       date: 'May 2024 - Present',
-      title: 'ML Researcher',
+      title: 'Research Assistant',
       subtitle: 'UW Madison, Wisconsin, USA',
       description: [
         'Developed a Deep Learning model for DNA sequence analysis using CHIP-Seq and ATAC-seq data, advancing cancer research.',
