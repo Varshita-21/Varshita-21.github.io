@@ -7,7 +7,6 @@ import cloudDark from "../assets/cloudDark.png";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 import { FaCode, FaDatabase, FaTools, FaCloud, FaCubes, FaChartBar, FaBriefcase, FaGraduationCap, FaCalendarAlt } from 'react-icons/fa';
 
-
 const Home = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
@@ -23,7 +22,6 @@ const Home = () => {
     { text: "Co-op (Spring'25)", icon: <FaCalendarAlt className="mr-2" />, color: "bg-purple-300" }
   ];
   
-
   return (
     <>
       <div
@@ -32,7 +30,7 @@ const Home = () => {
             ? { backgroundImage: `url('${cloud}')`, backgroundSize: "cover" }
             : { backgroundImage: `url('${cloudDark}')`, backgroundSize: "cover" }
         }
-        className="h-screen flex items-center justify-center" // Center content vertically and horizontally
+        className="h-screen flex items-center justify-center px-4 sm:px-8" // Added padding for mobile view
       >
         <main className="flex flex-col items-center text-center">
           <h1 className="text-4xl tracking-tight sm:text-5xl md:text-6xl mb-8 font-sans">

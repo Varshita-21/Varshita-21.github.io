@@ -20,8 +20,7 @@ const Home = () => {
       title: 'Research Assistant',
       subtitle: 'UW Madison, Wisconsin, USA',
       description: [
-        'Developed a Deep Learning model for DNA sequence analysis using CHIP-Seq and ATAC-seq data, advancing cancer research.',
-        'Uncovered key biological insights through exploratory analysis of genomic datasets, accelerating research timelines under the guidance of <a href="https://ramanathan.ece.wisc.edu/" target="_blank" rel="noopener noreferrer"><strong>Dr. Parmesh Ramanathan</strong></a>.'
+        'Developed a deep learning model for DNA sequence analysis using CHIP-Seq and ATAC-seq data, achieving 8% AUPRC improvement in identifying genomic regions and regulatory factors for cancer research. Currently working on a DQN-based agent for network optimization to enhance signal allocation and connectivity management, targeting 15% improvement in network performance under the guidance of <a href="https://ramanathan.ece.wisc.edu/" target="_blank" rel="noopener noreferrer"><strong>Dr. Parmesh Ramanathan</strong></a>.'
       ],
       type: typeWork,
     },
@@ -30,16 +29,16 @@ const Home = () => {
       date: 'Aug 2023 - May 2025',
       title: 'MS in Data Engineering',
       subtitle: 'University of Wisconsin-Madison',
-      description: ['Coursework: Distributed Systems, Big Data Systems, Database Systems, Data Modeling, Operating Systems, Optimization, Artificial Intelligence.'],
+      description: ['Coursework: Distributed Systems, Big Data Systems, Database Systems, Data Modeling, Operating Systems, Optimization, Artificial Intelligence, Data Visualization.'],
       type: typeSchool,
     },
     {
       id: 2,
       date: 'Sep 2022 - Aug 2023',
-      title: 'Software Engineer',
+      title: 'Data Engineer',
       subtitle: 'Providence Global Center, India',
       description: [
-        'Designed and implemented scalable data pipelines on Azure for the Trusana mental wellness platform, optimizing data processing with Azure Data Factory and SQL. Developed interactive Power BI dashboards and integrated machine learning algorithms to enhance data insights and visualizations.'
+        'Designed and optimized scalable data pipelines in Azure and Databricks for AI-driven health analytics, improving system scalability by 25% and data processing speed by 40%. Integrated TF/IDF for comment analysis and machine learning algorithms into Power BI dashboards, while maintaining 99.9% data availability and reducing operational costs through automated ETL processes.'
       ],
       type: typeWork,
     },
@@ -48,7 +47,9 @@ const Home = () => {
       date: 'Jan 2022 - Jul 2022',
       title: 'Data Engineer Intern',
       subtitle: 'Anheuser-Busch Inbev, India',
-      description: ['Delivered KPI dashboards, enhancing decision-making by 70%. Led migration to Azure, cutting costs by $15,000/year and improving scalability. Managed Power BI dashboards and end-to-end data pipelines.'],
+      description: [
+        'Led migration to Azure cloud, achieving 25% improved scalability and $15,000 annual cost savings. Built and maintained end-to-end data pipelines for financial products (PTP, ATR, OTC) using Python, SQL, and Azure Data Factory, delivering KPI dashboards that enhanced decision-making by 70% while ensuring 99% data availability for critical business processes.'
+      ],
       type: typeWork,
     },
     {

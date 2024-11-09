@@ -68,22 +68,20 @@ export const contactLinks = [
 ];
 
 
-
-  export const serviceData = [
-    {
-      name: 'Data Engineering & Analytics',
-      desc: "I specialize in designing scalable data pipelines using Apache Spark, PySpark, and SQL, and build seamless ETL processes on cloud platforms like Azure. I also leverage BI tools like Power BI and Tableau to turn raw data into actionable insights, enabling data-driven decision-making through interactive dashboards and detailed reports.",
-      img: "https://img.icons8.com/clouds/110/database.png"
-    },
-    {
-      name: 'AI & ML',
-      desc: "I focus on building advanced AI solutions using machine learning models and large language models (LLMs). Leveraging techniques like Retrieval-Augmented Generation (RAG), I develop context-aware AI systems for complex challenges across domains. My AI work integrates with scalable cloud architectures for cutting-edge performance.",
-      img: "https://img.icons8.com/cotton/100/artificial-intelligence.png"
-    },
-    {
-      name: 'Software Development',
-      desc: "I have experience working in backend development and systems design using C++, C# and NoSQL databases. My work focuses on building scalable and reliable software solutions, applying modern engineering practices to ensure systems are optimized for performance and robustness.",
-      img: "https://img.icons8.com/?size=100&id=13662&format=png&color=000000"
-    },
-  ];
-  
+export const serviceData = [
+  {
+    name: 'Data Engineering & Analytics',
+    desc: "I specialize in building end-to-end data pipelines that drive business insights, encompassing ETL processes, data wrangling, and exploratory data analysis (EDA). I develop scalable solutions on Azure cloud platform. I create interactive dashboards and KPI visualizations using Power BI and Tableau, enabling stakeholders to make data-driven decisions through comprehensive reports and analytics.",
+    img: "https://img.icons8.com/clouds/110/database.png"
+  },
+  {
+    name: 'AI & ML',
+    desc: "I'm actively developing my expertise in AI, with a growing focus on Large Language Models (LLMs) and Generative AI. Currently exploring techniques like Retrieval-Augmented Generation (RAG) and working to integrate these emerging technologies into practical applications. While I'm still learning and expanding my knowledge in this rapidly evolving field, I bring solid fundamentals in machine learning and data science to my projects.",
+    img: "https://img.icons8.com/cotton/100/artificial-intelligence.png"
+  },
+  {
+    name: 'Software Development',
+    desc: "I have experience working in backend development and systems design using C++, C# and NoSQL databases. My work focuses on building scalable and reliable software solutions, applying modern engineering practices to ensure systems are optimized for performance and robustness.",
+    img: "https://img.icons8.com/?size=100&id=13662&format=png&color=000000"
+  },
+];
