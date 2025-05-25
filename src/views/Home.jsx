@@ -13,13 +13,12 @@ const Home = () => {
 
   // Replace this URL with the actual iCloud share link of your resume
   const resumeUrl =
-    "https://drive.google.com/file/d/1hp7N7KiVwzWf3YlKb6OmzdN3t9ahP77i/view?usp=sharing";
+    "https://drive.google.com/file/d/1VZ3JTNc2uBH2t__B96oRS4v_Fvzf5R_2/view?usp=sharing";
 
   // Sample tags for Status Tags feature
   const tags = [
     { text: "Open to Work", icon: <FaBriefcase className="mr-2" />, color: "bg-green-300" },
-    { text: "New Grad (May'25)", icon: <FaGraduationCap className="mr-2" />, color: "bg-blue-300" },
-    { text: "Co-op (Spring'25)", icon: <FaCalendarAlt className="mr-2" />, color: "bg-purple-300" }
+    { text: "New Grad (May'25)", icon: <FaGraduationCap className="mr-2" />, color: "bg-blue-300" }
   ];
   
   return (
@@ -47,23 +46,19 @@ const Home = () => {
             <span className="block text-[#a6d5cf] text-xxl font-sans">
               <Typical
                 steps={[
-                  "A Data Engineer",
-                  1000,
                   "A Software Engineer",
                   1000,
-                  "A Data Analyst",
+                  "A Data Engineer",
                   1000,
-                  "A BI Developer",
+                  "A Developer",
+                  1000,
+                  "A Programmer",
                   1000,
                   "A Designer",
                   1000,
                   "An Idea Builder",
                   1000,
                   "A Problem Solver",
-                  1000,
-                  "A Developer",
-                  1000,
-                  "A Programmer",
                   1000,
                   "A Curious Technologist",
                   1000,
