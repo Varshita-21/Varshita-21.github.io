@@ -15,6 +15,32 @@ const Projects = () => {
         "<span class='highlight'>Impact</span>: Research in progress, exploring novel approaches to enhance network resilience and signal stability in remote areas. Initial tests show promising results in maintaining consistent connectivity through hybrid network solutions."
       ]
     },
+
+    {
+      url: "https://github.com/Varshita-21/external-merge-sort",  // 
+      imgSrc: "https://img.icons8.com/?size=100&id=31478&format=png&color=000000",
+      title: "Optimized External Merge Sort",
+      associatedWith: "UW Madison",
+      skills: "C++, OLAP, Database Systems",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: Efficiently sorting large datasets exceeding memory capacity with minimal comparison overhead.",
+        "<span class='highlight'>Approach</span>: Reduced sorting comparison complexity to logarithmic scale using a tournament tree of losers. Minimized per-row comparison effort to a single integer comparison instruction using Offset Value Coding.",
+        "<span class='highlight'>Impact</span>: Achieved highly optimized sorting performance suitable for OLAP systems and large-scale database sorting operations."
+      ]
+    },
+    
+    {
+      url: "",
+      imgSrc: "https://img.icons8.com/plasticine/100/linux-client.png",
+      title: "Custom XV6 Operating System Scheduler",
+      associatedWith: "UW-Madison",
+      skills: "C, Linux, xv6 Operating System",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: Default xv6 scheduler lacked priority-based process management.",
+        "<span class='highlight'>Approach</span>: Implemented multi-level feedback queue scheduler with aging mechanism. Added support for priority inheritance to prevent priority inversion.",
+        "<span class='highlight'>Impact</span>: Successfully demonstrated improved process management with priority-based scheduling. Enhanced system response time for high-priority processes while preventing starvation."
+      ]
+    },
     {
       url: "",
       imgSrc: "https://img.icons8.com/?size=100&id=68239&format=png&color=000000",
@@ -65,18 +91,6 @@ const Projects = () => {
     },
     {
       url: "",
-      imgSrc: "https://img.icons8.com/?size=100&id=115346&format=png&color=000000",
-      title: "Restaurant Recommendation System",
-      associatedWith: "Vellore Institute of Technology",
-      skills: "Machine Learning, Python, scikit-learn, NLTK, Pandas",
-      description: [
-        "<span class='highlight'>Problem Statement</span>: Local restaurant discovery platform needed personalized recommendation system.",
-        "<span class='highlight'>Approach</span>: Implemented hybrid filtering combining collaborative (SVD) and content-based (TF-IDF) recommendations. Processed user reviews using NLTK for sentiment analysis and feature extraction.",
-        "<span class='highlight'>Impact</span>: System successfully processes daily recommendations for local restaurants. Improved user engagement through personalized suggestions based on past preferences and review sentiment."
-      ]
-    },
-    {
-      url: "",
       imgSrc: "https://img.icons8.com/?size=100&id=NQoLvvpxnQmL&format=png&color=#4E937F",
       title: "Faiss-based Clustering for Efficient IVF Indexing",
       associatedWith: "UW-Madison",
@@ -85,30 +99,6 @@ const Projects = () => {
         "<span class='highlight'>Problem Statement</span>: Optimizing high-dimensional vector search for large-scale LLM applications.",
         "<span class='highlight'>Approach</span>: Implemented various clustering algorithms (K-means variants, DBSCAN, CluStream, STREAM) using Faiss to optimize IVF indexing. Conducted comprehensive benchmarking of algorithms based on index build time, search efficiency, information loss, and cluster balance.",
         "<span class='highlight'>Impact</span>: Identified optimal clustering strategies for efficient and accurate retrieval within the IVF framework, specifically tailored for high-dimensional vector embeddings."
-      ]
-    },
-    // {
-    //   url: "",
-    //   imgSrc: "https://img.icons8.com/?size=100&id=114358&format=png&color=000000",
-    //   title: "Course Q&A Chatbot",
-    //   associatedWith: "Vellore Institute of Technology",
-    //   skills: "Python, Deep Learning, Keras, NLTK, Tkinter",
-    //   description: [
-    //     "<span class='highlight'>Problem Statement</span>: Students needed quick access to course-related information outside office hours.",
-    //     "<span class='highlight'>Approach</span>: Developed LSTM-based chatbot with custom knowledge base for handling course-specific queries. Implemented efficient response caching and basic context management.",
-    //     "<span class='highlight'>Impact</span>: Successfully deployed for two courses, handling basic student queries about assignments, deadlines, and course materials. Reduced repetitive queries to teaching assistants."
-    //   ]
-    // },
-    {
-      url: "",
-      imgSrc: "https://img.icons8.com/plasticine/100/linux-client.png",
-      title: "Custom XV6 Operating System Scheduler",
-      associatedWith: "UW-Madison",
-      skills: "C, Linux, xv6 Operating System",
-      description: [
-        "<span class='highlight'>Problem Statement</span>: Default xv6 scheduler lacked priority-based process management.",
-        "<span class='highlight'>Approach</span>: Implemented multi-level feedback queue scheduler with aging mechanism. Added support for priority inheritance to prevent priority inversion.",
-        "<span class='highlight'>Impact</span>: Successfully demonstrated improved process management with priority-based scheduling. Enhanced system response time for high-priority processes while preventing starvation."
       ]
     },
     {

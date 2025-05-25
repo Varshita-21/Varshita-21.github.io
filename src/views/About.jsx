@@ -49,10 +49,10 @@ const About = () => {
                   An Engineer with a passion for storytelling. I love diving into complex challenges and finding elegant, efficient solutions.
                 </p>
                 <p className="mb-4">
-                  Currently pursuing a Master's in Data Engineering from the University of Wisconsin-Madison, I've had the opportunity to work on a range of projects that include data analysis, visualization, machine learning, IoT, and Android app development.
+                  Currently pursuing a Master's in Data Engineering from the University of Wisconsin-Madison, I've had the opportunity to work on a range of projects that include database systems, distributed systems, machine learning, IoT, and Android app development.
                 </p>
                 <p className="mb-4">
-                  When I'm not deep in data, you might find me cycling through scenic trails, hiking new paths, or catching up on the latest TV shows and movies. I also have a hobby of pretending to be a high-end photographer, capturing the beauty of sunsets and striking skies with my phone. Whether it's solving complex problems or enjoying some downtime, I'm always up for a new adventure.
+                  When I'm not deep in debugging, you might find me cycling through scenic trails, hiking new paths, or catching up on the latest TV shows and movies. I also have a hobby of pretending to be a high-end photographer, capturing the beauty of sunsets and striking skies with my phone. Whether it's solving complex problems or enjoying some downtime, I'm always up for a new adventure.
                 </p>
               </div>
             </motion.div>
