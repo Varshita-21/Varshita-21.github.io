@@ -35,7 +35,7 @@ const Home = () => {
     {
       id: 2,
       date: 'Sep 2022 - Aug 2023',
-      title: 'Data Engineer',
+      title: 'Software Engineer',
       subtitle: 'Providence Global Center, India',
       description: [
         'Designed and optimized scalable data pipelines in Azure and Databricks for AI-driven health analytics, improving system scalability by 25% and data processing speed by 40%. Integrated TF/IDF for comment analysis and machine learning algorithms into Power BI dashboards, while maintaining 99.9% data availability and reducing operational costs through automated ETL processes.'
