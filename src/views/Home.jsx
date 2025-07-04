@@ -13,7 +13,7 @@ const Home = () => {
 
   // Replace this URL with the actual iCloud share link of your resume
   const resumeUrl =
-    "https://drive.google.com/file/d/1VZ3JTNc2uBH2t__B96oRS4v_Fvzf5R_2/view?usp=sharing";
+    "https://drive.google.com/file/d/1d-95M6HJr9Ah6k0vovhN8-oifqxdUmsq/view?usp=sharing";
 
   // Sample tags for Status Tags feature
   const tags = [
