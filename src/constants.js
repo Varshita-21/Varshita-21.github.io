@@ -1,10 +1,10 @@
 export const techStack = [
   // Programming Languages
+  { name: "C++", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", type: "language" },
+  { name: "Java", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", type: "language" },
   { name: "Python", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", type: "language" },
   { name: "MySQL", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg", type: "language" },
   { name: "Bash", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg", type: "language" },
-  { name: "C++", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg", type: "language" },
-  { name: "Java", link: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg", type: "language" },
   { name: "MatLab", link: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/matlab/matlab-original.svg", type: "language" },
   { name: "Julia", link: "https://img.icons8.com/?size=100&id=pIBHzDCVs5Eg&format=png&color=000000", type: "language" },
 
