@@ -15,32 +15,6 @@ const Projects = () => {
         "<span class='highlight'>Impact</span>: Research in progress, exploring novel approaches to enhance network resilience and signal stability in remote areas. Initial tests show promising results in maintaining consistent connectivity through hybrid network solutions."
       ]
     },
-
-    {
-      url: "https://github.com/Varshita-21/external-merge-sort",  
-      imgSrc: "https://img.icons8.com/?size=100&id=31478&format=png&color=000000",
-      title: "Optimized External Merge Sort",
-      associatedWith: "UW Madison",
-      skills: "C++, OLAP, Database Systems",
-      description: [
-        "<span class='highlight'>Problem Statement</span>: Efficiently sorting large datasets exceeding memory capacity with minimal comparison overhead.",
-        "<span class='highlight'>Approach</span>: Reduced sorting comparison complexity to logarithmic scale using a tournament tree of losers. Minimized per-row comparison effort to a single integer comparison instruction using Offset Value Coding.",
-        "<span class='highlight'>Impact</span>: Achieved highly optimized sorting performance suitable for OLAP systems and large-scale database sorting operations."
-      ]
-    },
-    
-    {
-      url: "",
-      imgSrc: "https://img.icons8.com/plasticine/100/linux-client.png",
-      title: "Custom XV6 Operating System Scheduler",
-      associatedWith: "UW Madison",
-      skills: "C, Linux, xv6 Operating System",
-      description: [
-        "<span class='highlight'>Problem Statement</span>: Default xv6 scheduler lacked priority-based process management.",
-        "<span class='highlight'>Approach</span>: Implemented multi-level feedback queue scheduler with aging mechanism. Added support for priority inheritance to prevent priority inversion.",
-        "<span class='highlight'>Impact</span>: Successfully demonstrated improved process management with priority-based scheduling. Enhanced system response time for high-priority processes while preventing starvation."
-      ]
-    },
     {
       url: "",
       imgSrc: "https://img.icons8.com/?size=100&id=68239&format=png&color=000000",
@@ -55,7 +29,7 @@ const Projects = () => {
     },
     {
       url: "",
-      imgSrc: "https://img.icons8.com/office/40/chatbot.png", 
+      imgSrc: "https://img.icons8.com/office/80/chatbot.png", 
       title: "AI Chatbot for Deep Learning Course",
       associatedWith: "UW-Madison",
       skills: "LoRA, LLaMA-3, PyTorch, Streamlit, Quantization",
@@ -63,6 +37,30 @@ const Projects = () => {
         "<span class='highlight'>Problem Statement</span>: Students needed an interactive assistant to query lecture content efficiently instead of manually searching 45+ hours of transcripts.",
         "<span class='highlight'>Approach</span>: Adapted LLaMA-3.2B model using LoRA for domain-specific fine-tuning. Implemented 4-bit quantization and gradient checkpointing to enable single-GPU training. Built a Streamlit-based chatbot interface for real-time query responses.",
         "<span class='highlight'>Impact</span>: Achieved 85% domain-specific response accuracy. Delivered a lightweight, cost-efficient solution that supports personalized learning and faster concept retrieval for students."
+      ]
+    },
+    {
+      url: "https://github.com/Varshita-21/external-merge-sort",  
+      imgSrc: "https://img.icons8.com/?size=100&id=31478&format=png&color=000000",
+      title: "Optimized External Merge Sort",
+      associatedWith: "UW Madison",
+      skills: "C++, OLAP, Database Systems",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: Efficiently sorting large datasets exceeding memory capacity with minimal comparison overhead.",
+        "<span class='highlight'>Approach</span>: Reduced sorting comparison complexity to logarithmic scale using a tournament tree of losers. Minimized per-row comparison effort to a single integer comparison instruction using Offset Value Coding.",
+        "<span class='highlight'>Impact</span>: Achieved highly optimized sorting performance suitable for OLAP systems and large-scale database sorting operations."
+      ]
+    },
+    {
+      url: "",
+      imgSrc: "https://img.icons8.com/plasticine/100/linux-client.png",
+      title: "Custom XV6 Operating System Scheduler",
+      associatedWith: "UW Madison",
+      skills: "C, Linux, xv6 Operating System",
+      description: [
+        "<span class='highlight'>Problem Statement</span>: Default xv6 scheduler lacked priority-based process management.",
+        "<span class='highlight'>Approach</span>: Implemented multi-level feedback queue scheduler with aging mechanism. Added support for priority inheritance to prevent priority inversion.",
+        "<span class='highlight'>Impact</span>: Successfully demonstrated improved process management with priority-based scheduling. Enhanced system response time for high-priority processes while preventing starvation."
       ]
     },    
     {
@@ -112,18 +110,18 @@ const Projects = () => {
         "<span class='highlight'>Approach</span>: Built ETL pipeline using Apache Airflow DAGs for daily data extraction from Spotify API. Implemented data validation with Pandas and deployed containerized solution using Docker Compose.",
         "<span class='highlight'>Impact</span>: Successfully automated daily music analytics processing with robust error handling and monitoring. Created personal dashboard for tracking listening patterns and discovering music trends."
       ]
-    },
-    {
-      url: "",
-      imgSrc: "https://img.icons8.com/?size=100&id=UKRRxDvDbbdj&format=png&color=000000",
-      title: "Brand Performance Analysis Dashboard",
-      associatedWith: "Anheuser-Busch Inbev",
-      skills: "MySQL, SSIS, Power BI, Snowflake, SAP, Python, Azure",
-      description: [
-        "<span class='highlight'>Problem Statement</span>: Need for consolidated real-time brand performance analytics across global markets.",
-        "<span class='highlight'>Approach</span>: Developed interactive dashboards using MySQL, SSIS, Power BI, and Snowflake to analyze key business metrics, such as brand health and market share, for real-time KPI insights. Integrated data from SAP and internal sources to create multi-dimensional visualizations with dynamic slicers and filters, allowing in-depth analysis of brand performance, premium brand metrics, and global market trends.",
-        "<span class='highlight'>Impact</span>: Delivered user-friendly, regularly updated dashboards providing actionable insights, facilitating better decision-making. Contributed to an initiative consolidating 13 dashboards into a unified Power App, enhancing data accessibility and consistency across the organization."
-      ]
+    // },
+    // {
+    //   url: "",
+    //   imgSrc: "https://img.icons8.com/?size=100&id=UKRRxDvDbbdj&format=png&color=000000",
+    //   title: "Brand Performance Analysis Dashboard",
+    //   associatedWith: "Anheuser-Busch Inbev",
+    //   skills: "MySQL, SSIS, Power BI, Snowflake, SAP, Python, Azure",
+    //   description: [
+    //     "<span class='highlight'>Problem Statement</span>: Need for consolidated real-time brand performance analytics across global markets.",
+    //     "<span class='highlight'>Approach</span>: Developed interactive dashboards using MySQL, SSIS, Power BI, and Snowflake to analyze key business metrics, such as brand health and market share, for real-time KPI insights. Integrated data from SAP and internal sources to create multi-dimensional visualizations with dynamic slicers and filters, allowing in-depth analysis of brand performance, premium brand metrics, and global market trends.",
+    //     "<span class='highlight'>Impact</span>: Delivered user-friendly, regularly updated dashboards providing actionable insights, facilitating better decision-making. Contributed to an initiative consolidating 13 dashboards into a unified Power App, enhancing data accessibility and consistency across the organization."
+    //   ]
     }
 ];
 
